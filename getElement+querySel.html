@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style type="text/css">
+   div#demo{
+        line-height: 200px;
+        width: 600px;
+        text-align: center;
+        transition: all 1s;
+        transform: scaleY(0);
+        transform-origin: top;
+        background-color: red;
+        color: black;
+        
+   }
+
+   </style>
+</head>
+
+<body>
+    <button id="show">start play</button>
+    <button id="close">close play</button>
+
+    <div id="demo">
+        Hi, Parimal is Here
+    </div>
+
+<script>
+/* document.querySelector("#show").addEventListener("click", function(){
+    document.querySelector("#demo").setAttribute("style","opacity:1; transform:scaleY(1);")
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector("#demo").setAttribute("style", "opacity:0; transform:scaleY(0)")
+
+}) */
+document.getElementById("show").addEventListener("click", function(){
+    document.getElementById("demo").setAttribute("style", "opacity:1; transform:scaleY(1)")
+})
+
+document.getElementById("close").addEventListener("click", function(){
+    document.getElementById("demo").setAttribute("style", "opacity:0: transform:scaleY(1); transition: all 3s;")
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div id="demo">
+
+    <input type="text" id="myinput">
+    
+    <h1> </h1>
+    </div>
+    
+    <script type="text/javascript">
+    document.querySelector("#myinput").addEventListener("keyup",function(){
+    var inputpwd = this.value;
+    var mypwd ="abc123";
+                                  // getElementbyId not work input
+    if(inputpwd==mypwd){
+    document.querySelector("#demo h1").innerHTML="<font color='green'>Password is Correct</font>";
+    }
+    else{
+    document.querySelector("#demo h1").innerHTML="<font color='red'>Password is not Correct</font>";
+    };
+    
+    })
+
+</script>
+</body>
+</html>

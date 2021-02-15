@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div id="demo">
+
+    </div>
+    
+    <script>
+       function timeNow(){
+           const dateObject = new Date();
+                 hourNow = dateObject.getHours();
+                 minuteNow = dateObject.getMinutes();
+                 secondNow = dateObject.getSeconds();
+                 currentTime = hourNow + ":" + minuteNow + ":" + secondNow;
+                 document.getElementById("demo").innerHTML = currentTime;
+       }
+       setInterval(timeNow,1000);
+    </script>
+</body>
+</html>
